@@ -6,16 +6,16 @@ import './index.css';
 type ImageItem = { id: string; url: string; alt: string; category: string };
 const img = (id: string, url: string, alt: string, category: string): ImageItem => ({ id, url, alt, category });
 const images: ImageItem[] = [
-  img('living-1','https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200','sunlit living room','Living room 1'),
-  img('outdoor','https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=1200','outdoor terrace seating','Living room 2'),
-  img('jacuzzi','https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=1200','private jacuzzi','Full bathroom'),
-  img('bedroom','https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1200','bedroom with curtains','Bedroom'),
-  img('exterior','https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1200','apartment exterior','Exterior'),
-  img('kitchen','https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1200','full kitchen','Full kitchen'),
-  img('bath','https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1200','bathroom','Full bathroom'),
-  img('pool','https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1200','pool','Pool'),
-  img('gym','https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1200','gym','Gym'),
-  img('detail','https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1200','bright apartment details','Additional photos'),
+  img('living-1','/demo/living-room.svg','demo living room','Living room 1'),
+  img('outdoor','/demo/outdoor.svg','demo outdoor terrace','Living room 2'),
+  img('jacuzzi','/demo/bathroom.svg','demo private jacuzzi','Full bathroom'),
+  img('bedroom','/demo/bedroom.svg','demo bedroom','Bedroom'),
+  img('exterior','/demo/exterior.svg','demo apartment exterior','Exterior'),
+  img('kitchen','/demo/kitchen.svg','demo full kitchen','Full kitchen'),
+  img('bath','/demo/bathroom.svg','demo bathroom','Full bathroom'),
+  img('pool','/demo/outdoor.svg','demo pool','Pool'),
+  img('gym','/demo/outdoor.svg','demo gym','Gym'),
+  img('detail','/demo/living-room.svg','demo apartment details','Additional photos'),
 ];
 const amenities = [
   ['Kitchen', UtensilsIcon], ['Wifi', Wifi], ['Dedicated workspace', House], ['Free parking on premises', Car],
@@ -31,11 +31,11 @@ const reviews = [
 ];
 const cohosts = ['Sharath','Aman Dev Pahwa','Maria Karen Priyanka','Simran','Pallavi','Sanyukta','Shruti','Amisha'];
 const nearby = [
-  ['Beautiful Studio with a view to die for','₹23,600','4.91', 'https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=700'],
-  ['NAQAB - 1bhk with private pool','₹42,218','4.95','https://images.pexels.com/photos/157811/pexels-photo-157811.jpeg?auto=compress&cs=tinysrgb&w=700'],
-  ['Greentique Luxury Flat with plunge pool, Calangute','₹44,506','4.94','https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=700'],
-  ['The Tropical Studio | 5 mins to Beach','₹22,824','4.96','https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=700'],
-  ['Luxury Casa Bella 1BHK with plunge pool, Calangute','₹39,942','4.95','https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=700'],
+  ['Beautiful Studio with a view to die for','₹23,600','4.91', '/demo/living-room.svg'],
+  ['NAQAB - 1bhk with private pool','₹42,218','4.95','/demo/outdoor.svg'],
+  ['Greentique Luxury Flat with plunge pool, Calangute','₹44,506','4.94','/demo/bedroom.svg'],
+  ['The Tropical Studio | 5 mins to Beach','₹22,824','4.96','/demo/exterior.svg'],
+  ['Luxury Casa Bella 1BHK with plunge pool, Calangute','₹39,942','4.95','/demo/kitchen.svg'],
 ];
 const photoTourOrder = ['living-1','outdoor','kitchen','bedroom','bath','gym','exterior','pool','detail'];
 type DateRange = [number, number];
