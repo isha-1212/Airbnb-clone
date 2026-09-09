@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Airbnb Listing Clone"
+description = "A desktop-only Airbnb listing experience for a romantic serviced apartment in Candolim, with a long-form property page, sticky section navigation, booking card, photo tour, calendar, reviews, and lightbox gallery."
+version = "1.0.0"
+id = "artifacts/airbnb-listing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20997
+
+[services.development]
+run = "pnpm --filter @workspace/airbnb-listing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/airbnb-listing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/airbnb-listing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20997"
+BASE_PATH = "/"

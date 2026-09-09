@@ -1,6 +1,6 @@
-# [Project name]
+# Airbnb Listing Clone
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A desktop-only Airbnb-style listing experience for a romantic serviced apartment in Candolim, India.
 
 ## Run & Operate
 
@@ -22,23 +22,34 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/airbnb-listing/src/App.tsx` — listing page, photo tour, lightbox, calendar, and interaction state.
+- `artifacts/airbnb-listing/src/index.css` — visual system and responsive desktop layout styles.
+- `artifacts/airbnb-listing/vite.config.ts` — Vite entrypoint and artifact preview configuration.
+- `artifacts/api-server` — shared API scaffold; this listing clone does not depend on it.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first build is intentionally frontend-only; listing content is local data because no backend or database was requested.
+- The secondary section bar uses normal document flow plus CSS sticky positioning; the booking card remains in-flow rather than independently sticky.
+- The Photo Tour reuses the listing gallery data and opens the shared Lightbox so gallery behavior stays consistent across views.
+- Calendar state is lifted to the listing page so selected dates update the in-page summary, booking card, and compact sticky-nav price.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Browse a long-form property listing with a 5-image hero gallery.
+- Navigate Photos, Amenities, Reviews, and Location with smooth scrolling and active-section sync.
+- Review amenities, sleeping arrangements, availability, rating breakdowns, reviews, location, host details, and nearby stays.
+- Open a dedicated Photo Tour view and browse photos in an accessible Lightbox.
+- Select or clear a date range and see the nights and price summary update.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Desktop-only scope; mobile and tablet layouts are intentionally out of scope for the current product.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- The app is served by the managed `artifacts/airbnb-listing: web` workflow and requires workflow-provided `PORT` and `BASE_PATH`.
+- Reference photos were not supplied as reusable assets, so the UI uses original/licensed substitute photo URLs while preserving the specified composition.
 
 ## Pointers
 
