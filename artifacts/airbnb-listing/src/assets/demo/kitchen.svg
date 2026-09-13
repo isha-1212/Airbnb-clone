@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8e3df"/><stop offset=".52" stop-color="#f8e9c9"/><stop offset="1" stop-color="#a7b4ac"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#g)"/><rect y="500" width="1200" height="300" fill="#b98e6c"/><rect x="120" y="280" width="910" height="300" rx="24" fill="#f6f2e8"/><path d="M190 330h760M190 400h760" stroke="#c2b5a3" stroke-width="18"/><rect x="410" y="545" width="360" height="90" rx="20" fill="#786a5a"/><circle cx="255" cy="380" r="45" fill="#8eb5ad"/><circle cx="850" cy="380" r="45" fill="#e4ad61"/><text x="70" y="100" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="700">DEMO STAY</text><text x="72" y="146" fill="#fff" font-family="Arial,sans-serif" font-size="22">Kitchen preview</text>
+</svg>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8d0db"/><stop offset=".55" stop-color="#faf1df"/><stop offset="1" stop-color="#ab7c6c"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#g)"/><rect y="565" width="1200" height="235" fill="#936b64"/><rect x="170" y="380" width="740" height="245" rx="30" fill="#f9f5ec"/><rect x="170" y="330" width="740" height="120" rx="25" fill="#72505b"/><rect x="225" y="350" width="240" height="88" rx="14" fill="#e7d2c0"/><rect x="520" y="350" width="240" height="88" rx="14" fill="#e7d2c0"/><path d="M1020 130v380M1050 130v380" stroke="#fff" stroke-width="24" opacity=".5"/><text x="70" y="100" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="700">DEMO STAY</text><text x="72" y="146" fill="#fff" font-family="Arial,sans-serif" font-size="22">Bedroom preview</text>
+</svg>

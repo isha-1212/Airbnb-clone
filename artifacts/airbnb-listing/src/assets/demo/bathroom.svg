@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c2dde1"/><stop offset=".55" stop-color="#f3f0e5"/><stop offset="1" stop-color="#7fa8a8"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#g)"/><rect y="570" width="1200" height="230" fill="#6f9a9a" opacity=".8"/><ellipse cx="600" cy="560" rx="370" ry="115" fill="#f9f7ed"/><ellipse cx="600" cy="545" rx="290" ry="70" fill="#99d5d6"/><path d="M190 220h820" stroke="#fff" stroke-width="24" opacity=".7"/><path d="M270 225v260M930 225v260" stroke="#fff" stroke-width="12" opacity=".65"/><text x="70" y="100" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="700">DEMO STAY</text><text x="72" y="146" fill="#fff" font-family="Arial,sans-serif" font-size="22">Bathroom preview</text>
+</svg>
